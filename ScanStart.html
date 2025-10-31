@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="ro">
-<head>
+<html lang="en">
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="format-detection" content="telephone=no">
-    <link rel="icon" href="https://www.scanstart.ro/images/favicon.ico" type="image/x-icon">
-    <title>Acasă - ScanStart</title>
+    <link rel="icon" href="./ScanStart_files/media/favicon.ico" type="image/x-icon">
+    <title>Acasa</title>
 
     <!-- Bootstrap -->
     <link href="./ScanStart_files/css/bootstrap.css" rel="stylesheet">
@@ -17,14 +18,15 @@
     <link rel="stylesheet" href="./ScanStart_files/css/jquery.fancybox.css">
     <link rel="stylesheet" href="./ScanStart_files/css/search.css">
     <link rel="stylesheet" href="./ScanStart_files/css/pop-up.css">
+
     <link rel="stylesheet" href="./ScanStart_files/css/tm_docs.css" type="text/css" media="screen">
-    <link rel="stylesheet" type="text/css" href="./ScanStart_files/css/cookieconsent.min.css">
+    <link rel="stylesheet" href="./ScanStart_files/css/cookieconsent.min.css" type="text/css">
 
     <!--JS-->
-    <script src="./ScanStart_files/js/jquery.js.descărcare"></script>
-    <script src="./ScanStart_files/js/jquery-migrate-1.2.1.min.js.descărcare"></script>
-    <script src="./ScanStart_files/js/device.min.js.descărcare"></script>
-    <script src="./ScanStart_files/js/bootstrap.min.js.descărcare"></script>
+    <script src="./ScanStart_files/js/jquery.js"></script>
+    <script src="./ScanStart_files/js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="./ScanStart_files/js/device.min.js"></script>
+    <script src="./ScanStart_files/js/bootstrap.min.js"></script>
     <script>
       $(document).ready(function(){
         if((sessionStorage.getItem("AlreadyVisited")==null)||(sessionStorage.getItem("AlreadyVisited")==undefined)){
@@ -33,35 +35,24 @@
         } 
       });
     </script>
-</head>
+  </head>
 
-<body>
-    <!-- Cookie Consent Banner -->
-    <div role="dialog" aria-live="polite" aria-label="cookieconsent" aria-describedby="cookieconsent:desc" class="cc-window cc-banner cc-type-info cc-theme-block cc-bottom cc-color-override--1608664607">
-      <span id="cookieconsent:desc" class="cc-message">Acest site foloseste cookies pentru a furniza vizitatorilor o experienta mult mai buna de navigare.</span>
-      <div class="cc-compliance">
-        <a aria-label="dismiss cookie message" role="button" tabindex="0" class="cc-btn cc-dismiss">OK</a>
-      </div>
-    </div>
-  
-    <div id="panel"></div>
-
-    <!-- Modal CEI -->
-    <div id="myModal" class="modal fade" style="margin:5%; box-shadow: 0 0 10px rgba(0,0,0,0.3);">
+  <body>
+    <div id="myModal" class="modal fade" style="margin:5%; box-shadow: 10px 10px 5px grey;">
       <div class="modal-dialog">
         <div class="modal-content" style="border-radius: 10px;">
           <div class="modal-header" style="text-align:center; border-bottom:none;">
             <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <img src="./ScanStart_files/media/logo.png" alt="ScanStart Logo" style="max-width: 150px;">
+            <img src="./ScanStart_files/media/logo.png" alt="ScanStart Logo" style="max-width: 250px;">
           </div>
           <div class="modal-body" style="text-align:center;">
-            <h3 style="font-weight:bold; color:#007bff;">Nou! Soluții pentru Cartea de Identitate Electronică (CEI)</h3>
-            <p style="font-size: 16px; margin-top:10px;">
-              ScanStart oferă acum cititoare RFID compatibile cu noile Cărți de Identitate Electronice (CEI).
-              Aceste soluții facilitează citirea automată a datelor de pe cip și integrarea directă în aplicațiile
-              <strong>ScanStart Client for Notariat</strong> și <strong>ScanStart Client for Hotel</strong>.
+            <h3 style="font-weight:bold; color:#3FBFAD;">Nou! Solutii pentru Cartea de Identitate Electronica (CEI)</h3>
+            <p style="font-size: 18px; margin-top:10px;">
+              ScanStart ofera acum cititoare RFID compatibile cu noile Carti Electronice de Identitate (CEI).
+              Aceste solutii faciliteaza citirea automata a datelor de pe cip si integrarea directa in aplicatiile
+              <strong>ScanStart Client for Notariat</strong> si <strong>ScanStart Client for Hotel</strong>.
             </p>
-            <a href="cei.html" class="btn btn-primary" style="margin-top:15px;">Află mai multe</a>
+            <a href="cei.html" class="btn btn-primary" style="margin-top:15px;">Afla mai multe</a>
           </div>
         </div>
       </div>
@@ -69,7 +60,7 @@
 
     <div class="page">
       <!-- Google Analytics -->
-      <script async src="./ScanStart_files/js/analytics.js.descărcare"></script>
+      <script async src="./ScanStart_files/js/analytics.js"></script>
       <script>
         (function(i,s,o,g,r,a,m){
           i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -89,15 +80,15 @@
         <div class="container">             
           <nav class="navbar navbar-default navbar-static-top">
             <div class="navbar-left">  
-              <ul class="nav navbar-nav sf-menu index-menu sf-js-enabled sf-arrows" data-type="navbar">
+              <ul class="nav navbar-nav sf-menu index-menu" data-type="navbar">
                 <li>
-                  <img src="./ScanStart_files/media/logo.png" alt="ScanStart Logo">
+                  <img src="./ScanStart_files/media/logo.png">
                 </li>
                 <li><a href="https://www.scanstart.ro/index.php">acasa</a></li>
-                <li><a href="cei.html">Soluții CEI</a></li>
                 <li class="dropdown">
-                  <a href="https://www.scanstart.ro/cum_functioneaza.php" class="sf-with-ul">ScanStart</a>
-                  <ul class="dropdown-menu" style="display: none;">
+                  <a href="https://www.scanstart.ro/cum_functioneaza.php">ScanStart</a>
+                  <ul class="dropdown-menu">
+                    <li><a href="cei.html">Soluții CEI</a></li>
                     <li><a href="https://www.scanstart.ro/cum_functioneaza.php">Cum functionează?</a></li>
                     <li><a href="https://www.scanstart.ro/functionalitati.php">Funcționalități</a></li>
                     <li><a href="https://www.scanstart.ro/avantaje.php">Avantaje</a></li>
@@ -122,43 +113,6 @@
           </nav>
         </div>
       </div>  
-      
-      <!-- Sticky Header -->
-      <div id="stuck_container_sticky" class="stuck_container isStuck" style="top:-70px; visibility: hidden; position: fixed; width: 100%; margin-top: 0px;">
-        <div class="container">             
-          <nav class="navbar navbar-default navbar-static-top">
-            <div class="navbar-left">  
-              <ul class="nav navbar-nav sf-menu index-menu sf-js-enabled sf-arrows" data-type="navbar">
-                <li><img src="./ScanStart_files/media/logo.png" alt="ScanStart Logo"></li>
-                <li><a href="https://www.scanstart.ro/index.php">acasa</a></li>
-                <li><a href="cei.html">Soluții CEI</a></li>
-                <li class="dropdown">
-                  <a href="https://www.scanstart.ro/cum_functioneaza.php" class="sf-with-ul">ScanStart</a>
-                  <ul class="dropdown-menu" style="display: none;">
-                    <li><a href="https://www.scanstart.ro/cum_functioneaza.php">Cum functionează?</a></li>
-                    <li><a href="https://www.scanstart.ro/functionalitati.php">Funcționalități</a></li>
-                    <li><a href="https://www.scanstart.ro/avantaje.php">Avantaje</a></li>
-                    <li><a href="https://www.scanstart.ro/versiuni.php">Versiuni</a></li>
-                    <li><a href="https://www.scanstart.ro/faq.php">întrebări frecvente</a></li>
-                  </ul>				  
-                </li>
-                <li class="dropdown">
-                  <a href="https://www.scanstart.ro/servicii.php" class="sf-with-ul">Servicii</a>
-                  <ul class="dropdown-menu-servicii" style="display: none;">
-                    <li><a href="https://www.scanstart.ro/servicii.php">Servicii</a></li>
-                    <li><a href="https://www.scanstart.ro/forHotels.php">ScanStart for Hotels</a></li>
-                    <li><a href="https://www.scanstart.ro/adBlocker.php">ScanStart AdBlocker</a></li>
-                    <li><a href="https://www.scanstart.ro/support.php">Suport tehnic</a></li>
-                    <li><a href="https://www.scanstart.ro/appManagement.php">App Management</a></li>
-                  </ul>
-                </li>
-                <li><a href="https://www.scanstart.ro/tarife.php">Tarife</a></li>
-                <li><a href="https://www.scanstart.ro/contact.php">Contact</a></li>
-              </ul>                           
-            </div>
-          </nav>
-        </div>
-      </div>
     </header>
 
     <!--========================================================
@@ -255,22 +209,22 @@
     </div>
 
     <!-- Scripts -->
-    <script src="./ScanStart_files/js/bootstrap.min(1).js.descărcare"></script>
-    <script src="./ScanStart_files/js/tm-scripts.js.descărcare"></script>
-    <script src="./ScanStart_files/js/jquery.cookie.js.descărcare"></script>
-    <script src="./ScanStart_files/js/jquery.easing.1.3.js.descărcare"></script>
-    <script src="./ScanStart_files/js/tmstickup.js.descărcare"></script>
-    <script src="./ScanStart_files/js/jquery.ui.totop.js.descărcare"></script>
-    <script src="./ScanStart_files/js/jquery.mousewheel.min.js.descărcare"></script>
-    <script src="./ScanStart_files/js/jquery.simplr.smoothscroll.min.js.descărcare"></script>
-    <script src="./ScanStart_files/js/superfish.js.descărcare"></script>
-    <script src="./ScanStart_files/js/jquery.rd-navbar.js.descărcare"></script>
-    <script src="./ScanStart_files/js/wow.js.descărcare"></script>
-    <script src="./ScanStart_files/js/jquery.rd-parallax.js.descărcare"></script>
-    <script id="facebook-jssdk" src="./ScanStart_files/js/sdk.js.descărcare"></script>
+    <script src="./ScanStart_files/js/bootstrap.min(1).js"></script>
+    <script src="./ScanStart_files/js/tm-scripts.js"></script>
+    <script src="./ScanStart_files/js/jquery.cookie.js"></script>
+    <script src="./ScanStart_files/js/jquery.easing.1.3.js"></script>
+    <script src="./ScanStart_files/js/tmstickup.js"></script>
+    <script src="./ScanStart_files/js/jquery.ui.totop.js"></script>
+    <script src="./ScanStart_files/js/jquery.mousewheel.min.js"></script>
+    <script src="./ScanStart_files/js/jquery.simplr.smoothscroll.min.js"></script>
+    <script src="./ScanStart_files/js/superfish.js"></script>
+    <script src="./ScanStart_files/js/jquery.rd-navbar.js"></script>
+    <script src="./ScanStart_files/js/wow.js"></script>
+    <script src="./ScanStart_files/js/jquery.rd-parallax.js"></script>
+    <script id="facebook-jssdk" src="./ScanStart_files/js/sdk.js"></script>
 
     <!-- Cookie Consent Script -->
-    <script src="./ScanStart_files/js/cookieconsent.min.js.descărcare"></script>
+    <script src="./ScanStart_files/js/cookieconsent.min.js"></script>
     <script>
       window.addEventListener("load", function(){
         window.cookieconsent.initialise({
@@ -289,5 +243,5 @@
 
     <!-- Scroll to Top Button -->
     <a href="#" id="toTop" class="toTop fa fa-chevron-up" style="display: none;" aria-label="Scroll to top"></a>
-</body>
+  </body>
 </html>
