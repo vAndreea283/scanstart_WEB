@@ -735,3 +735,9 @@ max-width: 100%;
     padding:0 5px !important;
   }
 }
+
+html {
+  transform: scale(1.25);
+  transform-origin: top left;
+  width: 80%; /* ajustează pentru scroll */
+}
